@@ -23,7 +23,11 @@ const styles = StyleSheet.create({
     label: {
         fontWeight: 'bold',
         fontSize: params.fontSize,
-    }
+    },
+    exploded: {
+        backgroundColor: '#ed6553',
+        borderColor: '#c23421'
+    },
 
 });
 

@@ -5,12 +5,13 @@ import styles from './styles';
 import Mine from './../Mine';
 
 export default props => {
-    const { mined, opened, nearMines } = props;
+    const { mined, opened, nearMines, exploded } = props;
 
     // estilo padrão
     const styleField = [ styles.field ];
     // outros estilos:
     if ( opened ) styleField.push( styles.opened );
+    if ( exploded ) styleField.push( styles.exploded );
     if ( styleField.length === 1 ) styleField.push( styles.regular );
 
     /** Alterar a cor de acordo com a quantidade de minas proximas
@@ -29,6 +30,7 @@ export default props => {
             { !mined && opened && nearMines > 0 ? 
             <Text style = {[ styles.label, { color: color } ]}>
                 { nearMines }</Text> : false }
+            { mined && opened ? <Mine /> : false }
         </View>
     );
 

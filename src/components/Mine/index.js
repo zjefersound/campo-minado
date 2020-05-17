@@ -2,7 +2,6 @@ import React from 'react';
 import { View } from 'react-native';
 
 import styles from './styles';
-import { transform } from '@babel/core';
 
 /**
  * CoreMine: é o núcleo da mina
