@@ -23,6 +23,7 @@ export default class Main extends Component {
                 </Text>
                 <Field />
                 <Field opened />
+                <Field opened nearMines = {0}/>
                 <Field opened nearMines = {1}/>
                 <Field opened nearMines = {2}/>
                 <Field opened nearMines = {3}/>
@@ -31,6 +32,8 @@ export default class Main extends Component {
                 <Field opened nearMines = {6}/>
                 <Field opened mined/>
                 <Field opened mined exploded/>
+                <Field flagged />
+                <Field flagged opened />
             </View>
         );
     }

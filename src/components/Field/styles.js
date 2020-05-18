@@ -9,8 +9,8 @@ const styles = StyleSheet.create({
     },
     regular: {
         backgroundColor: '#333',
-        borderLeftColor: '#999',
-        borderTopColor: '#999',
+        borderLeftColor: '#606060',
+        borderTopColor: '#606060',
         borderRightColor: '#222',
         borderBottomColor: '#222',
     },
